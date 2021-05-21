@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{e3e816b2-03a4-4207-a581-14206f74cc3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers">
+      <UniqueIdentifier>{a3cefcf4-6ed6-45fc-a610-74bba6bd3504}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{3d29be5f-a552-4122-bccb-0c88ca1603fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="shader.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\imgui\imgui_impl_glfw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\imgui\imgui_impl_opengl3.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\imgui\imgui_tables.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\glad\glad.c">
+      <Filter>headers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="includes\imgui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\imgui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\imgui\imgui_impl_glfw.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\imgui\imgui_impl_opengl3.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\imgui\imstb_rectpack.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\imgui\imstb_textedit.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\imgui\imstb_truetype.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="shader.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="model.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="boundingBox.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="LTC.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="polyLight.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="scene.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ltc.vert">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="ltcRect.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="polyLight.vert">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="polyLight.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="ltcCylinder.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="ltcDisk.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="ltcAll.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="ltcAll.vert">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="editorConfig.ini">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="ltcAll.tesc">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="ltcAll.tese">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="resources\models\disk.obj">
+      <Filter>resources</Filter>
+    </Object>
+    <Object Include="resources\models\cylinder.obj">
+      <Filter>resources</Filter>
+    </Object>
+  </ItemGroup>
+</Project>
