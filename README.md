@@ -35,6 +35,6 @@ Library                                     | Description
 1. Since OpenGL doesn’t support ray tracing, I plan to migrate this project later into Falcor and use DXR to calculate the soft shadows for those area lights  
 2. Inserting more area light types like star, cubic, torus, etc  
 3. When using normal mapping and transferring all the shading data into tangent space, it would cause mismatching problems in the LTC lookup table. So, I have to transform all normals into world space in the fragment shader which is not a good choice  
-4. I just displace the vertex position in a ripple effect. It would be better to reconstruct the normals for those new positions
- 
+4. I just displace the vertex position in a ripple effect. It would be better to reconstruct the normals for those new positions <br>
+Ans: The normal can be reconstructed through the partical derivatives for current pixel's world position in screen space. Basically, using the *ddx* and *ddy* function in fragment shader and N = cross(ddx, ddy).  
 
