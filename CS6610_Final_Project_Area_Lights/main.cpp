@@ -370,7 +370,7 @@ int main(int argc, char* args[])
 	GLuint tessQuadVBO = tessQuadModel.meshes[0].VBO;
 	auto tessQuadVertices = tessQuadModel.meshes[0].vertices;
 	vector<Vertex> newVertices = {
-		tessQuadVertices[2], tessQuadVertices[0], tessQuadVertices[4], tessQuadVertices[1]
+		tessQuadVertices[2], tessQuadVertices[0], tessQuadVertices[3], tessQuadVertices[1]
 	};
 	glBindVertexArray(tessQuadVAO);
 	glBindBuffer(GL_ARRAY_BUFFER, tessQuadVBO);
@@ -550,8 +550,8 @@ int main(int argc, char* args[])
 					{
 						static bool twoSided = false;
 						auto currentLight = dynamic_pointer_cast<RectDiskLight>(areaLight);
-						ImGui::SliderFloat("Width", &currentLight->halfX, 0.01f, 1.0f, "%.2f");
-						ImGui::SliderFloat("Height", &currentLight->halfY, 0.01f, 1.0f, "%.2f");
+						ImGui::SliderFloat("Width", &currentLight->halfX, 0.01f, 40.0f, "%.2f");
+						ImGui::SliderFloat("Height", &currentLight->halfY, 0.01f, 40.0f, "%.2f");
 						ImGui::Checkbox("TwoSided", &twoSided);
 
 						// update dirX and dirY in light
